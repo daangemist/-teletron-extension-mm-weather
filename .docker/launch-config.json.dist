@@ -1,0 +1,80 @@
+{
+  "name": "extension-mm-weather",
+  "extensions": [
+    {
+      "installationName": "extension-mm-weather",
+      "path": "../build-extension"
+    }
+  ],
+  "data": {
+    "/core/components": [
+      {
+        "id": "mm-weather-forecast",
+        "name": "Forecast",
+        "type": "mm-weather.weather",
+        "autoHide": false,
+        "data": {
+          "type": "forecast",
+          "location": "Amsterdam, Netherlands",
+          "apiKey": "xxx",
+          "units": "metric"
+        }
+      },
+      {
+        "id": "mm-weather-current",
+        "name": "Current",
+        "type": "mm-weather.weather",
+        "autoHide": false,
+        "data": {
+          "type": "current",
+          "location": "Amsterdam, Netherlands",
+          "apiKey": "xxx",
+          "units": "metric"
+        }
+      }
+    ],
+    "/core/views": [
+      {
+        "id": "mm-weather",
+        "name": "Weather view",
+        "components": [
+          {
+            "component": "mm-weather-current",
+            "position": {
+              "top": 1,
+              "left": 1,
+              "width": 1,
+              "height": 1
+            }
+          },
+          {
+            "component": "mm-weather-forecast",
+            "position": {
+              "top": 3,
+              "left": 1,
+              "width": 1,
+              "height": 1
+            }
+          }
+        ],
+        "autoHide": false,
+        "gridWidth": 3,
+        "gridHeight": 3
+      }
+    ],
+    "/core/containers": [
+      {
+        "id": "mm-weather",
+        "name": "Weather",
+        "views": [
+          "mm-weather"
+        ],
+        "widgets": [],
+        "widgetsPosition": [
+          "right",
+          "top"
+        ]
+      }
+    ]
+  }
+}

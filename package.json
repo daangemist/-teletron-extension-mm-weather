@@ -1,0 +1,30 @@
+{
+  "name": "extension-mm-weather",
+  "private": "true",
+  "main": "backend/index.js",
+  "version": "0.1.0",
+  "keywords": [
+    "weather",
+    "forecast",
+    "magic-mirror",
+    "extension"
+  ],
+  "homepage": "https://github.com/daangemist/teletron-extension-mm-weather",
+  "bugs": {
+    "url": "https://github.com/daangemist/teletron-extension-mm-weather/issues"
+  },
+  "author": {
+    "name": "daangemist",
+    "url": "https://www.daangemist.nl"
+  },
+  "teletron": {
+    "name": "mm-weather",
+    "displayName": "Weather (Magic Mirror)"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "@teletron/magic-mirror-wrapper-node": "^0.1.3"
+  }
+}

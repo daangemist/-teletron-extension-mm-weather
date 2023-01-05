@@ -1,0 +1,8 @@
+FROM node:16.15
+
+RUN npm i -g npm@7
+COPY extension-run.sh /run.sh
+
+USER node
+
+ENTRYPOINT [ "/run.sh" ]

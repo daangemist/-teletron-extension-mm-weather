@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  teletron:
+    container_name: mm-weather-teletron
+    build: .docker
+    environment:
+      - PORT=80
+      - DEBUG=teletron:*
+    volumes:
+      - ./:/build-extension:ro
+    ports:
+      - 1115:80

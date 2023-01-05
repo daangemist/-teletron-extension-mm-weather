@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+tar -czf "./extension-mm-weather.tar.gz" README.MD backend mm-weather web package.json package-lock.json
+
+echo "Build available at: extension-mm-weather.tar.gz"

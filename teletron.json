@@ -1,0 +1,9 @@
+{
+  "components": {
+    "clock": {
+      "displayName": "Weather",
+      "keywords": ["weather", "forecast", "temperature"],
+      "description": "This component displays the Magic Mirror weather module inside your Teletron environment."
+    }
+  }
+}
