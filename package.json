@@ -2,7 +2,7 @@
   "name": "extension-mm-weather",
   "private": "true",
   "main": "backend/index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "weather",
     "forecast",
